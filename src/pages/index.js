@@ -1,5 +1,4 @@
 import React from "react"
-import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -10,12 +9,5 @@ const IndexPage = () => (
     <ButtonWrapper>Click me</ButtonWrapper>
   </Layout>
 )
-
-const ButtonWrapper = styled.button`
-  background: blue;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-`
 
 export default IndexPage
