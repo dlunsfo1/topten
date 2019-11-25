@@ -2,11 +2,11 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const Index = () => (
+const Menu = () => (
   <Layout>
     <SEO title="Home" />
-    <h3>Index</h3>
+    <h3>Menu</h3>
   </Layout>
 )
 
-export default Index
+export default Menu
