@@ -6,6 +6,8 @@ import img from '../images/bcg/homeBcg.jpeg';
 import QuickInfo from '../components/HomePageComponents/QuickInfo';
 import Gallery from '../components/HomePageComponents/Gallery-1';
 
+import Menu from '../components/HomePageComponents/Menu';
+
 const Index = () => (
   <Layout>
     <SEO title="Home" />
@@ -16,6 +18,7 @@ const Index = () => (
     </IndexHeader>
     <QuickInfo />
     <Gallery />
+    <Menu />
   </Layout>
 );
 

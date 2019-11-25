@@ -33,7 +33,7 @@ export default class Footer extends Component {
             return (
               <a
                 href={item.path}
-                keyId={item.id}
+                key={item.id}
                 target="_blank"
                 rel="noopener noreferrer"
               >
