@@ -5,6 +5,10 @@ const IndexHeader = ({ img, children }) => {
   return <HeaderWrapper img={img}>{children}</HeaderWrapper>
 }
 
+const PageHeader = ({ img, children }) => {
+  return <DefaultHeaderWrapper img={img}>{children}</DefaultHeaderWrapper>
+}
+
 const HeaderWrapper = styled.header`
   min-height: calc(100vh - 55.78px);
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -14,4 +18,8 @@ const HeaderWrapper = styled.header`
   align-items: center;
 `
 
-export { IndexHeader }
+const DefaultHeaderWrapper = styled(HeaderWrapper)`
+  min-height: 60vh;
+`
+
+export { IndexHeader, PageHeader }
