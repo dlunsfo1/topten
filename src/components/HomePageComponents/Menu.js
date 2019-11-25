@@ -16,7 +16,7 @@ const PRODUCTS = graphql`
           city
           year
           rank
-
+          zipcode
           photos {
             fixed(width: 150, height: 150) {
               ...GatsbyContentfulFixed_tracedSVG
