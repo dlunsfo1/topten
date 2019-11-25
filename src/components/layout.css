@@ -7,10 +7,11 @@
 
 :root {
   --mainBlue: #f15025;
+  --mainYellow: #d2aa5c;
 }
 
 body {
   font-family: sans-serif;
-  color: #fff;
-  background: var(--mainBlue)
+  color: #000;
+  background:#fff;
 }
