@@ -4,7 +4,7 @@ import SEO from '../components/seo';
 import { IndexHeader, Banner, BannerButton } from '../utils';
 import img from '../images/bcg/homeBcg.jpeg';
 import QuickInfo from '../components/HomePageComponents/QuickInfo';
-import Gallery from '../components/HomePageComponents/Gallery-1';
+import Listing from '../components/Listing';
 
 import Menu from '../components/HomePageComponents/Menu';
 
@@ -17,7 +17,8 @@ const Index = () => (
       </Banner>
     </IndexHeader>
     <QuickInfo />
-    <Gallery />
+    {/* <Gallery /> */}
+    <Listing />
     <Menu />
   </Layout>
 );

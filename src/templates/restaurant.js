@@ -50,7 +50,15 @@ export const query = graphql`
 `;
 
 const ContenteWrapper = styled.section`
-  width: 90%;
+  @media (min-width: 576px) {
+    width: 94%;
+  }
+  @media (min-width: 776px) {
+    width: 70%;
+  }
+  @media (min-width: 992px) {
+    width: 70%;
+  }
   margin: 2rem auto;
   p {
     margin: 1rem 0;
