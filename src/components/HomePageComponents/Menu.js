@@ -14,6 +14,7 @@ const PRODUCTS = graphql`
         node {
           name
           city
+          slug
           year
           rank
           zipcode
@@ -38,7 +39,11 @@ export default function Menu() {
           render={data => {
             const products = data.items.edges;
             return products.map(item => {
-              return <Product key={item.node.id} product={item.node} />;
+              return (
+                <Link to={`/restaurants/${item.node.slug}`}>
+                  <Product key={item.node.id} product={item.node} />
+                </Link>
+              );
             });
           }}
         />

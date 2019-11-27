@@ -1,13 +1,13 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react';
+import styled from 'styled-components';
 
 const IndexHeader = ({ img, children }) => {
-  return <HeaderWrapper img={img}>{children}</HeaderWrapper>
-}
+  return <HeaderWrapper img={img}>{children}</HeaderWrapper>;
+};
 
 const PageHeader = ({ img, children }) => {
-  return <DefaultHeaderWrapper img={img}>{children}</DefaultHeaderWrapper>
-}
+  return <DefaultHeaderWrapper img={img}>{children}</DefaultHeaderWrapper>;
+};
 
 const HeaderWrapper = styled.header`
   min-height: calc(100vh - 55.78px);
@@ -16,10 +16,10 @@ const HeaderWrapper = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
-`
+`;
 
 const DefaultHeaderWrapper = styled(HeaderWrapper)`
-  min-height: 60vh;
-`
+  min-height: 80vh;
+`;
 
-export { IndexHeader, PageHeader }
+export { IndexHeader, PageHeader };

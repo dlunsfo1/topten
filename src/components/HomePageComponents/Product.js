@@ -4,7 +4,7 @@ import { styles } from '../../utils';
 import Img from 'gatsby-image';
 
 export default function Product({ product }) {
-  const { name, city, state, zipcode, body } = product;
+  const { name, city, state, zipcode } = product;
   const { fixed } = product.photos[0];
 
   return (
