@@ -16,7 +16,11 @@ const Restaurant = ({ data }) => {
     <Layout>
       <SEO title="Home" />
       <PageHeader img={photos[0].file.url}>
-        <Banner title={name} subtitle={`${city}, ${state}`} />
+        <Banner
+          title={name}
+          subtitle={`${city}, ${state}`}
+          type={`${data.contentfulRestaurant.category[0].category}`}
+        />
       </PageHeader>
       <Section>
         <ContenteWrapper>
@@ -37,6 +41,9 @@ export const query = graphql`
       city
       state
       zipcode
+      category {
+        category
+      }
       photos {
         file {
           url
@@ -54,10 +61,10 @@ const ContenteWrapper = styled.section`
     width: 94%;
   }
   @media (min-width: 776px) {
-    width: 70%;
+    width: 50%;
   }
   @media (min-width: 992px) {
-    width: 70%;
+    width: 50%;
   }
   margin: 2rem auto;
   p {

@@ -16,6 +16,9 @@ const PRODUCTS = graphql`
           city
           slug
           year
+          category {
+            category
+          }
           rank
           zipcode
           photos {

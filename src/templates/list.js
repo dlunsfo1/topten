@@ -11,11 +11,11 @@ import Menu from '../components/HomePageComponents/Menu';
 const Index = () => (
   <Layout>
     <SEO title="Home" />
-    <IndexHeader img={img}>
+    {/* <IndexHeader img={img}>
       <Banner title="America's Top Ten" subtitle="Tom Horan">
         <BannerButton style={{ margin: '2rem auto' }}>Click</BannerButton>
       </Banner>
-    </IndexHeader>
+    </IndexHeader> */}
     <QuickInfo />
     {/* <Gallery /> */}
     <Listing />

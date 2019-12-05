@@ -6,13 +6,16 @@ import Img from 'gatsby-image';
 export default function Product({ product }) {
   const { name, city, state, zipcode } = product;
   const { fixed } = product.photos[0];
+  const { list } = product.category[0].category;
 
   return (
     <ProductWrapper>
       <Img fixed={fixed} className="img" />
       <div className="text">
         <div className="product-content">
-          <h3 className="name">{name}</h3>
+          <h3 className="name">
+            {name} - {list}
+          </h3>
           <h3 className="price">
             {city}, {state} {zipcode}
           </h3>
